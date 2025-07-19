@@ -1,0 +1,312 @@
+@use "utils/variable" as *;
+@use "utils/mixin" as *;
+
+/*
+main visual
+=============================================================================== */
+.main-visual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 10;
+    padding: 12px 3% 19px;
+    background-color: $main;
+    color: $base;
+    transform: translateY(-50%);
+  }
+
+  &__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: $base;
+    filter: drop-shadow(20px 0 40px rgba($base, 0.8));
+  }
+}
+
+/*
+WORKS
+=============================================================================== */
+.works {
+  margin-top: 150px;
+
+  &__column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -30px;
+  }
+}
+
+.works-card {
+  width: 42%;
+  margin-top: 100px;
+
+  // &:first-of-type {
+  //   margin-top: 0;
+  // }
+
+  &__image {
+    filter: drop-shadow(8px 8px 5px rgba($font, 0.6));
+  }
+
+  &__title {
+    margin-top: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  &__item {
+    width: max-content;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid $font;
+    color: $font;
+    font-size: rem(10);
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+/*
+SKILL
+=============================================================================== */
+.skill {
+  margin-top: 150px;
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  &__group {
+    width: 48%;
+  }
+}
+
+.skill-media {
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+  margin-bottom: 40px;
+  padding: 10px;
+  box-shadow: 5px 5px 8px rgba($font, 0.6);
+
+  &__image {
+    max-width: 20%;
+  }
+
+  &__contents {
+    max-width: 80%;
+    margin-left: 30px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+/*
+ABOUT
+=============================================================================== */
+.about {
+  margin-top: 150px;
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  &__image {
+    width: 30%;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__body {
+    width: 60%;
+  }
+}
+
+.about-body {
+  &__heading {
+    display: inline;
+  }
+
+  &__name--ja {
+    margin-top: 10px;
+    font-size: rem(32);
+  }
+
+  &__unit {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  &__title {
+    width: 20%;
+    margin-top: 50px;
+  }
+
+  &__contents {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  &__text {
+    padding-top: 25px;
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+/*
+レスポンシブ（width:600px）
+=============================================================================== */
+@media screen and (width <= 600px) {
+  /* main-visual **********************************************************************/
+  .main-visual {
+    &__title {
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+      padding: 12px 3% 19px;
+      transform: translate(-50%, -50%);
+    }
+
+    &__mask {
+      display: none;
+    }
+  }
+
+  /* WORKS **********************************************************************/
+  .works {
+    margin-top: 120px;
+
+    &__column {
+      flex-direction: column;
+      margin-top: 50px;
+    }
+  }
+
+  .works-card {
+    width: 90%;
+    margin: 50px auto 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  /* SKILL **********************************************************************/
+  .skill {
+    margin-top: 120px;
+
+    &__column {
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    &__group {
+      width: 100%;
+    }
+  }
+
+  /* ABOUT **********************************************************************/
+  .about {
+    margin-top: 120px;
+
+    &__column {
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    &__image {
+      width: 50%;
+      margin: 0 auto;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &__body {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .about-body {
+    &__heading {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    &__name--en {
+      display: block;
+    }
+
+    &__unit {
+      display: block;
+      flex-wrap: wrap;
+      padding-top: 40px;
+      font-family: $NotoSans;
+    }
+
+    &__title {
+      width: 100%;
+      margin-top: 40px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__contents {
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 15px;
+    }
+
+    &__text {
+      padding-top: 25px;
+      font-family: $NotoSans;
+      line-height: 1.75;
+      letter-spacing: 0.1em;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+
+  /* CONTACT **********************************************************************/
+}

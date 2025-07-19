@@ -1,0 +1,293 @@
+@use "utils/variable" as *;
+@use "utils/mixin" as *;
+
+.top {
+  margin-top: 130px;
+  padding: 2% 0 3.5% 6%;
+  background-color: $main;
+  color: $base;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+  display: flex;
+  margin-top: 5px;
+
+  &__item {
+    margin-right: 0.5em;
+  }
+
+  &__link {
+    color: $base;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__item:first-child::after {
+    content: ">";
+    margin-left: 0.5em;
+    color: $base;
+  }
+}
+
+/* メインコンテンツ */
+.description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+
+  &__image {
+    width: 40%;
+    filter: drop-shadow(8px 8px 5px rgba($font, 0.6));
+  }
+
+  &__caption {
+    width: 50%;
+  }
+
+  &__title {
+    font-size: clamp(rem(26), vw(48), rem(48));
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__link {
+    margin-top: 50px;
+  }
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 200px;
+  padding: 16px 20px 13px;
+  border: 2px solid transparent;
+  background-color: $main;
+  color: $base;
+  transition: all 0.2s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    width: 30px;
+    height: 2px;
+    background-color: $base;
+    transform: translateY(50%);
+    transition: all 0.2s ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    bottom: 22px;
+    width: 13px;
+    height: 2px;
+    background-color: $base;
+    transform: rotate(30deg);
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    border-color: currentcolor;
+    background-color: $base;
+    color: $main;
+
+    &::before {
+      background-color: $main;
+    }
+
+    &::after {
+      background-color: $main;
+    }
+  }
+}
+
+.detail {
+  margin-top: 150px;
+
+  &__heading {
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  &__contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  &__title {
+    width: 20%;
+    margin-top: 60px;
+    font-size: rem(18);
+  }
+
+  &__text {
+    width: 80%;
+    margin-top: 60px;
+  }
+}
+
+.point {
+  &__item {
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+/* ページネーション */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+
+  &--first {
+    justify-content: end;
+  }
+
+  &--end {
+    justify-content: baseline;
+  }
+
+  &__contents {
+    position: relative;
+    width: 250px;
+    padding: 15px 65px 15px 15px;
+    border: 2px solid transparent;
+    background-color: $base;
+    color: $main;
+    text-align: center;
+    transition: all 0.2s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      width: 40px;
+      height: 50px;
+      background-image: url("../img/arrow-right-bl.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      transition: all 0.2s ease;
+    }
+
+    &:hover {
+      background-color: $main;
+      color: $base;
+
+      &::after {
+        background-image: url("../img/arrow-right-wh.png");
+      }
+    }
+  }
+
+  &__text {
+    font-size: rem(18);
+    font-weight: bold;
+  }
+
+  &__image {
+    margin-top: 5px;
+    filter: drop-shadow(8px 8px 5px rgba($font, 0.6));
+  }
+}
+
+.pagination-reverse {
+  &__contents {
+    padding: 15px 15px 15px 65px;
+
+    &::after {
+      top: 50%;
+      right: 190px;
+      background-image: url("../img/arrow-left-bl.png");
+    }
+
+    &:hover::after {
+      background-image: url("../img/arrow-left-wh.png");
+    }
+  }
+}
+
+@media screen and (width <= 600px) {
+  .top {
+    margin-top: 110px;
+    padding: 2% 0 3.5% 6%;
+  }
+
+  /* メインコンテンツ */
+  .description {
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+    }
+
+    &__caption {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    &__list {
+      width: 75%;
+      margin: 20px auto 0;
+    }
+  }
+
+  .button {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+
+  .detail {
+    margin-top: 100px;
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__contents {
+      flex-direction: column;
+      margin-top: 100px;
+    }
+
+    &__title {
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    &__text {
+      width: 100%;
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+  }
+
+  .point {
+    &__item {
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

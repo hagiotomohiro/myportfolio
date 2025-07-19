@@ -1,0 +1,15 @@
+@use "sass:math";
+
+// フォントサイズ
+// モニタサイズ1600pxを起点にしたvwのサイズ指定
+@function vw($size, $viewport: 1600) {
+  $rate: math.div(100, $viewport);
+
+  @return $rate * $size * 1vw;
+}
+
+@function rem($value) {
+  $fontsize: math.div($value, 16);
+
+  @return $fontsize * 1rem;
+}

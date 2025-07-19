@@ -7,13 +7,13 @@
     <meta name="robots" content="noindex,nofollow">
     <meta name="description" content="萩尾智弘のポートフォリオサイト">
     <title>Hagio Tomohiro's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/myportfolio/assets/css/style.css">
     <!-- Twitterカード -->
     <meta name="twitter:card" content="summary">
     <meta property="og:url" content="https://pilina-cs.com/">
     <meta property="og:title" content="Hagio Tomohiro's Portfolio">
     <meta property="og:description" content="萩尾智弘のポートフォリオサイト">
-    <meta property="og:image" content="https://pilina-cs.com/assets/img/twitter_card.png">
+    <meta property="og:image" content="https://pilina-cs.com/assets/images/twitter_card.png">
     <!-- Googl font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
