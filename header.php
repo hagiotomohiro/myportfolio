@@ -30,19 +30,23 @@
             <span class="hamburger__text">MENU</span>
         </div>
         <!-- /.hamburger -->
+        <?php
+        // 現在のパスに '/pages/' を含むかどうかで下層ページかを判定
+        $is_subpage = strpos($_SERVER['PHP_SELF'], '/pages/') !== false;
+        ?>
         <nav class="gnav">
             <ul class="gnav__list">
                 <li class="gnav__item">
-                    <a class="gnav__link" href="#top">HOME</a>
+                    <a class="gnav__link" href="<?= $is_subpage ? '../index.php' : '#top' ?>">HOME</a>
                 </li>
                 <li class="gnav__item">
-                    <a class="gnav__link" href="#works">WORKS</a>
+                    <a class="gnav__link" href="<?= $is_subpage ? '../index.php#works' : '#works' ?>">WORKS</a>
                 </li>
                 <li class="gnav__item">
-                    <a class="gnav__link" href="#skill">SKILL</a>
+                    <a class="gnav__link" href="<?= $is_subpage ? '../index.php#skill' : '#skill' ?>">SKILL</a>
                 </li>
                 <li class="gnav__item">
-                    <a class="gnav__link" href="#about">ABOUT</a>
+                    <a class="gnav__link" href="<?= $is_subpage ? '../index.php#about' : '#about' ?>">ABOUT</a>
                 </li>
             </ul>
         </nav>
