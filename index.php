@@ -27,7 +27,7 @@
         <!-- /.section-title -->
         <div class="works__column">
             <div class="works-card fadein">
-                <a href="page/sample-1.html">
+                <a href="pages/sample-1.php">
                     <img class="works-card__image" src="./assets/images/sample1.webp" alt="小さなパスタ屋Tino ホームページ">
                     <h3 class="works-card__title">小さなパスタ屋Tino</h3>
                 </a>
@@ -40,7 +40,7 @@
             </div>
             <!-- /.works-card -->
             <div class="works-card fadein">
-                <a href="page/sample-2.html">
+                <a href="pages/sample-2.php">
                     <img class="works-card__image" src="./assets/images/sample2.webp" alt="株式会社アリオン ホームページ">
                     <h3 class="works-card__title">株式会社アリオン</h3>
                 </a>
@@ -54,7 +54,7 @@
             </div>
             <!-- /.works-card -->
             <div class="works-card fadein">
-                <a href="page/sample-3.html">
+                <a href="pages/sample-3.php">
                     <img class="works-card__image" src="./assets/images/sample3.webp" alt="クリエイティブ・ギルド　キユリアス">
                     <h3 class="works-card__title">クリエイティブ・ギルド　キユリアス</h3>
                 </a>
@@ -66,7 +66,7 @@
             </div>
             <!-- /.works-card -->
             <div class="works-card fadein">
-                <a href="page/sample-4.html">
+                <a href="pages/sample-4.php">
                     <img class="works-card__image" src="./assets/images/sample4.webp" alt="弓削島制作舎　福山Region　ランディングページ">
                     <h3 class="works-card__title">福山Region　ランディングページ</h3>
                 </a>
