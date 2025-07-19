@@ -75,6 +75,98 @@
     </section>
     <!-- WORKS end -->
 
+    <!-- SKILL start -->
+    <section id="skill" class="skill">
+        <div class="section-title open">
+            <span class="section-title__main--en">SKILL</span>
+            <h2 class="section-title__sub--ja">できること</h2>
+        </div>
+        <!-- /.section-title -->
+        <div class="skill__column">
+            <div class="skill__group">
+                <div class="skill-media fadein">
+                    <div class="skill-media__image">
+                        <img src="assets/img/html-css.png" alt="HTML/CSS">
+                    </div>
+                    <!-- /.skill-media__image -->
+                    <div class="skill-media__contents">
+                        <h3 class="skill-media__title">HTML/CSS</h3>
+                        <p class="skill-media__text">
+                            アクセシビリティに配慮した構造設計に対応したコーディングが行えます。パソコン、スマートフォンなど様々なデバイスに合わせレスポンシブ対応が行えます。
+                        </p>
+                    </div>
+                    <!-- /.skill-media__contents -->
+                </div>
+                <!-- /.skill-media -->
+                <div class="skill-media fadein">
+                    <div class="skill-media__image">
+                        <img src="assets/img/sass.png" alt="Sass">
+                    </div>
+                    <!-- /.skill-media__image -->
+                    <div class="skill-media__contents">
+                        <h3 class="skill-media__title">Sass</h3>
+                        <p class="skill-media__text">
+                            Sass(Scss)記法にて整備性に配慮したコーディングが行えます。
+                        </p>
+                    </div>
+                    <!-- /.skill-media__contents -->
+                </div>
+                <!-- /.skill-media -->
+                <div class="skill-media fadein">
+                    <div class="skill-media__image">
+                        <img src="assets/img/javascript.png" alt="JavaScript">
+                    </div>
+                    <!-- /.skill-media__image -->
+                    <div class="skill-media__contents">
+                        <h3 class="skill-media__title">JavaScript</h3>
+                        <p class="skill-media__text">
+                            メイン画像をスライドショーにしたり、Webサイトにフェードイン・フェードアウトなどリッチな動きをつけることができます。
+                        </p>
+                    </div>
+                    <!-- /.skill-media__contents -->
+                </div>
+                <!-- /.skill-media -->
+            </div>
+            <!-- /.skill__group -->
+            <div class="skill__group">
+                <div class="skill-media fadein">
+                    <div class="skill-media__image">
+                        <img src="assets/img/php.png" alt="PHP">
+                    </div>
+                    <!-- /.skill-media__image -->
+                    <div class="skill-media__contents">
+                        <h3 class="skill-media__title">PHP</h3>
+                        <p class="skill-media__text">
+                            静的サイトへの問い合わせフォームの実装が行えます
+                        </p>
+                    </div>
+                    <!-- /.skill-media__contents -->
+                </div>
+                <!-- /.skill-media -->
+                <div class="skill-media fadein">
+                    <div class="skill-media__image">
+                        <img src="assets/img/Wordpress.png" alt="Wordpress">
+                    </div>
+                    <!-- /.skill-media__image -->
+                    <div class="skill-media__contents">
+                        <h3 class="skill-media__title">Wordpress</h3>
+                        <p class="skill-media__text">
+                            Wordpress製の店舗HP、企業HPなどWebサイトを0から構築することができます。
+                        </p>
+                    </div>
+                    <!-- /.skill-media__contents -->
+                </div>
+                <!-- /.skill-media -->
+            </div>
+            <!-- /.skill__group -->
+        </div>
+        <!-- /.skill__column -->
+    </section>
+    <!-- SKILL start -->
+
+
+
+
 </main>
 
 <?php include 'footer.php'; ?>
