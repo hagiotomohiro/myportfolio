@@ -1,0 +1,26 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000y\u0000p\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sort": "npx stylelint \"**/*.{css,scss}\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hagiotomohiro/myportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hagiotomohiro/myportfolio/issues"
+  },
+  "homepage": "https://github.com/hagiotomohiro/myportfolio#readme",
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "stylelint": "^16.22.0",
+    "stylelint-order": "^7.0.0"
+  }
+}
