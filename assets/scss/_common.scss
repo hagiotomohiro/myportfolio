@@ -201,3 +201,19 @@ header
     opacity: 0;
   }
 }
+
+/*
+footer
+===============================================================================*/
+.footer {
+  background-color: $main;
+  margin-top: 200px;
+  text-align: center;
+
+  &__copyright {
+    color: $base;
+    font-size: rem(12);
+    letter-spacing: 0.05rem;
+    padding: 20px 0;
+  }
+}
