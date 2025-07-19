@@ -1,0 +1,43 @@
+@import "variable";
+@import "mixin";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $base;
+  color: $font;
+  font-family: $NotoSans;
+  font-size: 1rem;
+}
+
+h1 {
+  color: $base;
+  font-family: $Oawald;
+  font-size: clamp(rem(26), vw(48), rem(48));
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+h2 {
+  font-family: $Oawald;
+  font-size: rem(48);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: $Oawald;
+  font-size: rem(24);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: rem(24);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
