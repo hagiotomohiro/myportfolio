@@ -1,5 +1,12 @@
 <?php include 'header.php'; ?>
 
+<!-- ローディング画面 start -->
+<div class="loading">
+    <div class="loading__text"></div>
+    <!--/splash-->
+</div>
+<!-- ローディング画面 end -->
+
 <!-- Main visual start -->
 <div id="top" class="main-visual">
     <h1 class="main-visual__title">

@@ -1,4 +1,53 @@
 /*
+ローディング画面
+=========================================================================*/
+// テキストのカウントアップ + バーの設定
+const loading = document.querySelector('.loading');
+const loadingText = document.querySelector('.loading__text');
+
+const bar = new ProgressBar.Line(loadingText, {
+  easing: 'easeInOut', // アニメーション効果 linear、easeIn、easeOut、easeInOut が指定可能
+  duration: 3000, // 時間指定 (1000 = 1秒)
+  strokeWidth: 0.5, // 進捗ゲージの太さ
+  color: '#001e5b', // 進捗ゲージのカラー
+  trailWidth: 0.5, // ゲージベースの線の太さ
+  trailColor: '#f4f4f4', // ゲージベースの線のカラー
+  text: { // テキストの形状を直接指定
+    style: {
+      position: 'absolute',
+      left: '50%',
+      top: '50%',
+      padding: '0',
+      margin: '-50px 0 0 0',
+      transform: 'translate(-50%,-50%)',
+      fontSize: '1.25rem',
+      color: '#001e5b',
+    },
+    // 自動付与のスタイルを切る
+    autoStyleContainer: false
+  },
+  step: (state, bar) => {
+    bar.setText(`${Math.round(bar.value() * 100)} %`);
+  }
+});
+
+// アニメーションスタート
+bar.animate(1.0, () => {
+  setTimeout(() => {
+    if (loading) {
+      loading.style.transition = 'opacity 0.8s';
+      loading.style.opacity = 0;
+      setTimeout(() => {
+        loading.style.display = 'none';
+      }, 800);
+    }
+    // アニメーションが終わったらフェードアウト
+  }, 800);
+});
+
+
+
+/*
 ハンバーガーメニュー、ホバーで日本語に変換、スムーススクロール
 =========================================================================*/
 const hamburger = document.querySelector('.hamburger');

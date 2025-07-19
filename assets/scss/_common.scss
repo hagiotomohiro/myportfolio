@@ -78,6 +78,29 @@ img {
 }
 
 /*
+ローディング画面
+=============================================================================== */
+.loading {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: $base;
+  color: $main;
+  text-align: center;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 40%;
+    color: $main;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*
 header
 =============================================================================== */
 .gnav {
