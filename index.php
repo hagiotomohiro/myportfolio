@@ -164,7 +164,49 @@
     </section>
     <!-- SKILL start -->
 
-
+    <!-- ABOUT start -->
+    <section id="about" class="about">
+        <div class="section-title open">
+            <span class="section-title__main--en">ABOUT</span>
+            <h2 class="section-title__sub--ja">自己紹介</h2>
+        </div>
+        <!-- /.section-title -->
+        <div class="about__column fadein">
+            <div class="about__image">
+                <img src="assets/img/about.jpg" alt="萩尾智弘">
+            </div>
+            <!-- /.about__image -->
+            <div class="about-body about__body">
+                <div class="about-body__heading">
+                    <span class="about-body__name--en">Tomohiro Hagio</span>
+                    <h3 class="about-body__name--ja">萩尾&#8194;智弘</h3>
+                </div>
+                <!-- /.about-body__title -->
+                <dl class="about-body__unit">
+                    <dt class="about-body__title">所在地</dt>
+                    <dd class="about-body__contents">福岡県福岡市</dd>
+                    <dt class="about-body__title">自己紹介</dt>
+                    <dd class="about-body__contents">
+                        <p class="about-body__text">
+                            作業療法士として15年リハビリに従事し2019年からはピラティスインストラクターとしても活動しています。
+                        </p>
+                        <p class="about-body__text">
+                            患者様へリハビリの方法などをお伝えするチラシや冊子の作成から始まり、ピラティスインストラクターに
+                            なってからは、スタジオのホームページの制作やリメイク、ホームページやSNSに載せる画像や動画編集、バナー制作など
+                            デザインに関わる業務を担い、2024年からWebサイト制作、Webデザインを始めました。
+                        </p>
+                        <p class="about-body__text">
+                            リハビリやピラティスインストラクターではお客様の話を聞き、相手の希望を把握し希望を実現するための方法を模索することが大事で、
+                            Web制作の世界でもお客様に寄り添い希望を叶える手助けをしたいと思っています。
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <!-- /.about-body -->
+        </div>
+        <!-- /.about__column -->
+    </section>
+    <!-- ABOUT end -->
 
 
 </main>
