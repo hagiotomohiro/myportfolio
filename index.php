@@ -21,7 +21,7 @@
         <div class="works__column">
             <div class="works-card fadein">
                 <a href="page/sample-1.html">
-                    <img class="works-card__image" src="assets/img/sample1.webp" alt="小さなパスタ屋Tino ホームページ">
+                    <img class="works-card__image" src="./assets/images/sample1.webp" alt="小さなパスタ屋Tino ホームページ">
                     <h3 class="works-card__title">小さなパスタ屋Tino</h3>
                 </a>
                 <ul class="works-card__list">
@@ -34,7 +34,7 @@
             <!-- /.works-card -->
             <div class="works-card fadein">
                 <a href="page/sample-2.html">
-                    <img class="works-card__image" src="assets/img/sample2.webp" alt="株式会社アリオン ホームページ">
+                    <img class="works-card__image" src="./assets/images/sample2.webp" alt="株式会社アリオン ホームページ">
                     <h3 class="works-card__title">株式会社アリオン</h3>
                 </a>
                 <ul class="works-card__list">
@@ -48,7 +48,7 @@
             <!-- /.works-card -->
             <div class="works-card fadein">
                 <a href="page/sample-3.html">
-                    <img class="works-card__image" src="assets/img/sample3.webp" alt="クリエイティブ・ギルド　キユリアス">
+                    <img class="works-card__image" src="./assets/images/sample3.webp" alt="クリエイティブ・ギルド　キユリアス">
                     <h3 class="works-card__title">クリエイティブ・ギルド　キユリアス</h3>
                 </a>
                 <ul class="works-card__list">
@@ -60,7 +60,7 @@
             <!-- /.works-card -->
             <div class="works-card fadein">
                 <a href="page/sample-4.html">
-                    <img class="works-card__image" src="assets/img/sample4.webp" alt="弓削島制作舎　福山Region　ランディングページ">
+                    <img class="works-card__image" src="./assets/images/sample4.webp" alt="弓削島制作舎　福山Region　ランディングページ">
                     <h3 class="works-card__title">福山Region　ランディングページ</h3>
                 </a>
                 <ul class="works-card__list">
@@ -86,7 +86,7 @@
             <div class="skill__group">
                 <div class="skill-media fadein">
                     <div class="skill-media__image">
-                        <img src="assets/img/html-css.png" alt="HTML/CSS">
+                        <img src="./assets/images/html-css.png" alt="HTML/CSS">
                     </div>
                     <!-- /.skill-media__image -->
                     <div class="skill-media__contents">
@@ -100,7 +100,7 @@
                 <!-- /.skill-media -->
                 <div class="skill-media fadein">
                     <div class="skill-media__image">
-                        <img src="assets/img/sass.png" alt="Sass">
+                        <img src="./assets/images/sass.png" alt="Sass">
                     </div>
                     <!-- /.skill-media__image -->
                     <div class="skill-media__contents">
@@ -114,7 +114,7 @@
                 <!-- /.skill-media -->
                 <div class="skill-media fadein">
                     <div class="skill-media__image">
-                        <img src="assets/img/javascript.png" alt="JavaScript">
+                        <img src="./assets/images/javascript.png" alt="JavaScript">
                     </div>
                     <!-- /.skill-media__image -->
                     <div class="skill-media__contents">
@@ -131,7 +131,7 @@
             <div class="skill__group">
                 <div class="skill-media fadein">
                     <div class="skill-media__image">
-                        <img src="assets/img/php.png" alt="PHP">
+                        <img src="./assets/images/php.png" alt="PHP">
                     </div>
                     <!-- /.skill-media__image -->
                     <div class="skill-media__contents">
@@ -145,7 +145,7 @@
                 <!-- /.skill-media -->
                 <div class="skill-media fadein">
                     <div class="skill-media__image">
-                        <img src="assets/img/Wordpress.png" alt="Wordpress">
+                        <img src="./assets/images/Wordpress.png" alt="Wordpress">
                     </div>
                     <!-- /.skill-media__image -->
                     <div class="skill-media__contents">
@@ -173,7 +173,7 @@
         <!-- /.section-title -->
         <div class="about__column fadein">
             <div class="about__image">
-                <img src="assets/img/about.jpg" alt="萩尾智弘">
+                <img src="./assets/images/about.jpg" alt="萩尾智弘">
             </div>
             <!-- /.about__image -->
             <div class="about-body about__body">
