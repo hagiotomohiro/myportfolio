@@ -42,6 +42,42 @@ img {
   width: 100%;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: 1200px;
+}
+
+.section-title {
+  padding-top: 50px;
+  text-align: center;
+
+  &__main--en {
+    font-size: rem(54);
+    font-weight: bold;
+  }
+
+  &__sub--ja {
+    color: $base;
+    background-color: $main;
+    font-size: rem(14);
+
+    margin: 10px auto 0 auto;
+    padding: 4px 0 6px 0;
+    width: 200px;
+  }
+}
+
+// スクロールアニメーション
+.fadein {
+  opacity: 0;
+}
+
+.open {
+  opacity: 0;
+  transform: scale(0, 1);
+}
+
 /*
 header
 ===============================================================================*/
