@@ -239,3 +239,71 @@ footer
     letter-spacing: 0.05rem;
   }
 }
+
+/*
+レスポンシブ（width:600px）
+=============================================================================== */
+@media screen and (width <= 600px) {
+  h4 {
+    font-size: rem(22);
+    font-weight: bold;
+  }
+
+  /* header **********************************************************************/
+  // ナビゲーション
+  .gnav {
+    width: 100%;
+    translate: 100%;
+
+    &__list {
+      padding-top: 120px;
+    }
+
+    &__link {
+      font-size: rem(36);
+    }
+  }
+
+  // ハンバーガーメニュー
+  .hamburger {
+    top: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+
+    &__line {
+      left: 12px;
+      width: 35px;
+
+      &:nth-of-type(1) {
+        top: 15px;
+      }
+
+      &:nth-of-type(2) {
+        top: 27px;
+      }
+    }
+
+    &__text {
+      top: 34px;
+      left: 12px;
+      font-size: rem(11);
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .hamburger.active {
+    .hamburger__line {
+      left: 13px;
+      background-color: $base;
+
+      &:nth-of-type(1) {
+        top: 29px;
+      }
+
+      &:nth-of-type(2) {
+        top: 29px;
+      }
+    }
+  }
+}

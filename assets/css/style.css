@@ -594,6 +594,58 @@ footer
   letter-spacing: 0.05rem;
 }
 
+/*
+レスポンシブ（width:600px）
+=============================================================================== */
+@media screen and (width <= 600px) {
+  h4 {
+    font-size: 1.375rem;
+    font-weight: bold;
+  }
+  /* header **********************************************************************/
+  .gnav {
+    width: 100%;
+    translate: 100%;
+  }
+  .gnav__list {
+    padding-top: 120px;
+  }
+  .gnav__link {
+    font-size: 2.25rem;
+  }
+  .hamburger {
+    top: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+  }
+  .hamburger__line {
+    left: 12px;
+    width: 35px;
+  }
+  .hamburger__line:nth-of-type(1) {
+    top: 15px;
+  }
+  .hamburger__line:nth-of-type(2) {
+    top: 27px;
+  }
+  .hamburger__text {
+    top: 34px;
+    left: 12px;
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+  }
+  .hamburger.active .hamburger__line {
+    left: 13px;
+    background-color: #f4f4f4;
+  }
+  .hamburger.active .hamburger__line:nth-of-type(1) {
+    top: 29px;
+  }
+  .hamburger.active .hamburger__line:nth-of-type(2) {
+    top: 29px;
+  }
+}
 /********************************************************************************
 top-page
 ********************************************************************************/
@@ -754,6 +806,103 @@ ABOUT
   padding-top: 0;
 }
 
+/*
+レスポンシブ（width:600px）
+=============================================================================== */
+@media screen and (width <= 600px) {
+  /* main-visual **********************************************************************/
+  .main-visual__title {
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    padding: 12px 3% 19px;
+    transform: translate(-50%, -50%);
+  }
+  .main-visual__mask {
+    display: none;
+  }
+  /* WORKS **********************************************************************/
+  .works {
+    margin-top: 120px;
+  }
+  .works__column {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .works-card {
+    width: 90%;
+    margin: 50px auto 0;
+  }
+  .works-card:first-of-type {
+    margin-top: 0;
+  }
+  /* SKILL **********************************************************************/
+  .skill {
+    margin-top: 120px;
+  }
+  .skill__column {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .skill__group {
+    width: 100%;
+  }
+  /* ABOUT **********************************************************************/
+  .about {
+    margin-top: 120px;
+  }
+  .about__column {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .about__image {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about__image img {
+    border-radius: 50%;
+  }
+  .about__body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-body__heading {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .about-body__name--en {
+    display: block;
+  }
+  .about-body__unit {
+    display: block;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  .about-body__title {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .about-body__title:first-child {
+    margin-top: 0;
+  }
+  .about-body__contents {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .about-body__text {
+    padding-top: 25px;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+  }
+  .about-body__text:first-child {
+    padding-top: 0;
+  }
+  /* CONTACT **********************************************************************/
+}
 /********************************************************************************
 sample
 ********************************************************************************/
