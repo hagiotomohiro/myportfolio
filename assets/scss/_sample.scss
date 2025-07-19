@@ -180,7 +180,7 @@
       right: 15px;
       width: 40px;
       height: 50px;
-      background-image: url("../img/arrow-right-bl.png");
+      background-image: url("../images/arrow-right-bl.png");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -193,7 +193,7 @@
       color: $base;
 
       &::after {
-        background-image: url("../img/arrow-right-wh.png");
+        background-image: url("../images/arrow-right-wh.png");
       }
     }
   }
@@ -216,11 +216,11 @@
     &::after {
       top: 50%;
       right: 190px;
-      background-image: url("../img/arrow-left-bl.png");
+      background-image: url("../images/arrow-left-bl.png");
     }
 
     &:hover::after {
-      background-image: url("../img/arrow-left-wh.png");
+      background-image: url("../images/arrow-left-wh.png");
     }
   }
 }

@@ -1062,7 +1062,7 @@ sample
   right: 15px;
   width: 40px;
   height: 50px;
-  background-image: url("../img/arrow-right-bl.png");
+  background-image: url("../images/arrow-right-bl.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1074,7 +1074,7 @@ sample
   color: #f4f4f4;
 }
 .pagination__contents:hover::after {
-  background-image: url("../img/arrow-right-wh.png");
+  background-image: url("../images/arrow-right-wh.png");
 }
 .pagination__text {
   font-size: 1.125rem;
@@ -1091,10 +1091,10 @@ sample
 .pagination-reverse__contents::after {
   top: 50%;
   right: 190px;
-  background-image: url("../img/arrow-left-bl.png");
+  background-image: url("../images/arrow-left-bl.png");
 }
 .pagination-reverse__contents:hover::after {
-  background-image: url("../img/arrow-left-wh.png");
+  background-image: url("../images/arrow-left-wh.png");
 }
 
 @media screen and (width <= 600px) {
