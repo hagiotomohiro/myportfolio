@@ -124,3 +124,65 @@ SKILL
     margin-bottom: 20px;
   }
 }
+
+/*
+ABOUT
+===============================================================================*/
+.about {
+  margin-top: 150px;
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  &__image {
+    width: 30%;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__body {
+    width: 60%;
+  }
+}
+
+.about-body {
+  &__heading {
+    display: inline;
+  }
+
+  &__name--ja {
+    font-size: rem(32);
+    margin-top: 10px;
+  }
+
+  &__unit {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  &__title {
+    margin-top: 50px;
+    width: 20%;
+  }
+
+  &__contents {
+    margin-top: 50px;
+    width: 80%;
+  }
+
+  &__text {
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+    padding-top: 25px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
