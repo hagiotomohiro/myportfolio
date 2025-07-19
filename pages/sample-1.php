@@ -18,7 +18,7 @@
 
 <main class="container">
     <section class="description fadein">
-        <img class="description__image" src="../assets/img/sample1.webp" alt="小さなパスタ屋Tino">
+        <img class="description__image" src="../assets/images/sample1.webp" alt="小さなパスタ屋Tino">
         <div class="description__caption">
             <h2 class="description__title">小さなパスタ屋Tino</h2>
             <ul class="description__list works-card__list">
@@ -69,7 +69,7 @@
     <div class="pagination pagination--first fadein">
         <a class="pagination__contents" href="sample-2.php">
             <span class="pagination__text">No.2</span>
-            <img class="pagination__image" src="../assets/img/sample2.webp">
+            <img class="pagination__image" src="../assets/images/sample2.webp">
         </a>
     </div>
     <!-- /.pagination -->
