@@ -94,3 +94,63 @@ navLinks.forEach((gnavLink) => {
     });
   });
 });
+
+/*
+セクションタイトル　スクロールアニメーション
+=========================================================================*/
+// 監視対象が範囲内に現れたら実行する動作
+const animateOpen = (entries, obs) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.animate(
+        {
+          opacity: [0, 1],
+          transform: 'scale(1, 1)',
+        },
+        {
+          duration: 300,
+          easing: 'ease-out',
+          fill: 'forwards',
+        }
+      );
+      // アニメーションが一度表示されたら監視をやめる
+      obs.unobserve(entry.target);
+    }
+  });
+};
+
+// 監視設定
+const openObserver = new IntersectionObserver(animateOpen);
+
+// .fadeinを監視するよう指示
+const openElements = document.querySelectorAll('.open');
+openElements.forEach((openElement) => {
+  openObserver.observe(openElement);
+});
+
+
+/*
+スクロールアニメーション2
+=========================================================================*/
+// 監視対象が範囲内に現れたら実行する動作
+const animateFade = (entries, obs) => {
+  entries.forEach((entry, fadeIndex) => {
+    if (entry.isIntersecting) {
+      entry.target.animate(
+        {
+          opacity: [0, 1],
+          filter: ['blur(0.4rem)', 'blur(0)'],
+          translate: ['0 4rem', 0],
+        },
+        {
+          duration: 1200,
+          delay: 400 * fadeIndex,
+          easing: 'ease',
+          fill: 'forwards',
+        }
+      );
+      // アニメーションが一度表示されたら監視をやめる
+      obs.unobserve(entry.target);
+    }
+  });
+};
