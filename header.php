@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex,nofollow">
     <meta name="description" content="萩尾智弘のポートフォリオサイト">
     <title>Hagio Tomohiro's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/myportfolio/assets/css/style.css">
     <!-- Twitterカード -->
     <meta name="twitter:card" content="summary">
     <meta property="og:url" content="https://pilina-cs.com/">
