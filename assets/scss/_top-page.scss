@@ -37,3 +37,51 @@ main visual
     width: 40%;
   }
 }
+
+/*
+WORKS
+===============================================================================*/
+.works {
+  margin-top: 150px;
+
+  &__column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -30px;
+  }
+}
+
+.works-card {
+  margin-top: 100px;
+  width: 42%;
+
+  // &:first-of-type {
+  //   margin-top: 0;
+  // }
+
+  &__image {
+    filter: drop-shadow(8px 8px 5px rgba($font, 0.6));
+  }
+
+  &__title {
+    margin-top: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  &__item {
+    border: 1px solid $font;
+    color: $font;
+    font-size: rem(10);
+    font-weight: bold;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    width: max-content;
+  }
+}
