@@ -85,3 +85,42 @@ WORKS
     width: max-content;
   }
 }
+
+/*
+SKILL
+===============================================================================*/
+.skill {
+  margin-top: 150px;
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  &__group {
+    width: 48%;
+  }
+}
+
+.skill-media {
+  align-items: center;
+  box-shadow: 5px 5px 8px rgba($font, 0.6);
+  display: flex;
+  margin-bottom: 40px;
+  padding: 10px;
+  min-height: 150px;
+
+  &__image {
+    max-width: 20%;
+  }
+
+  &__contents {
+    margin-left: 30px;
+    max-width: 80%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}
